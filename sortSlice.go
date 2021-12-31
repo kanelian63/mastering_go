@@ -24,11 +24,11 @@ func main() {
 	sort.Slice(mySlice, func(i, j int) bool {
 		return mySlice[i].height < mySlice[j].height
 	})
-
 	fmt.Println("<", mySlice)
+
+
 	sort.Slice(mySlice, func(i, j int) bool {
 		return mySlice[i].height > mySlice[j].height
 	})
-
 	fmt.Println(">:", mySlice)
 }
