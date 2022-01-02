@@ -9,7 +9,10 @@ func main() {
 	fmt.Println("epoch time:", time.Now().Unix())
 	t := time.Now()
 	fmt.Println(t, t.Format(time.RFC3339))
-	fmt.Println(t.Weekday(), t.Day(), t.Month(), t.Year())
+	fmt.Println(t.Weekday())
+	fmt.Println(t.Day())
+	fmt.Println(t.Month())
+	fmt.Println(t.Year())
 
 	time.Sleep(time.Second)
 	t1 := time.Now()
