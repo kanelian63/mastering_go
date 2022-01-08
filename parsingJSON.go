@@ -17,12 +17,14 @@ func main() {
 	filename := arguments[1]
 
 	fileData, err := ioutil.ReadFile(filename)
+	fmt.Println(fileData)
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 
 	var parsedData map[string]interface{}
+	fmt.Println(parsedData)
 	json.Unmarshal([]byte(fileData), &parsedData)
 
 	for key, value := range parsedData {
