@@ -13,7 +13,7 @@ func main() {
 		fmt.Println("please provide a filename")
 		return
 	}
-
+	fmt.Println(arguments)
 	filename := arguments[1]
 
 	fileData, err := ioutil.ReadFile(filename)
