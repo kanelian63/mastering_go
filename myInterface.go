@@ -1,6 +1,6 @@
 package myInterface
 
-type shape interface {
+type Shape interface {
 	Area() float64
 	Perimeter() float64
 }
